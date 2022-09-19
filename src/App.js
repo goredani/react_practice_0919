@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Todo from './components/Todo';
+import TodoMetadata from './components/TodoMetadata';
 const todos = [
   {
     "userId": 1,
@@ -12,7 +13,7 @@ const todos = [
     "userId": 1,
     "id": 2,
     "title": "quis ut nam facilis et officia qui",
-    "completed": false
+    "completed": true
   },
   {
     "userId": 1,
@@ -26,10 +27,12 @@ const todos = [
 
 
 function App() {
-  let name = 'Dani';
   return (
     <div className='App'>
-      <Todo item={todos[0]}></Todo>
+      <div className='todo-container'>
+        {todos.map(todo => (<Todo item={todo} />))}
+
+      </div>
     </div>
   )
 }

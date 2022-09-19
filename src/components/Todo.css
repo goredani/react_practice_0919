@@ -1,0 +1,18 @@
+.Todo {
+    width: 300px;
+    border: 2px solid pink;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 12px;
+}
+
+
+.Todo h1 {
+    color: red;
+    background-color: bisque;
+    margin: 0;
+    font-size: 14px;
+    min-height: 50px;
+}
